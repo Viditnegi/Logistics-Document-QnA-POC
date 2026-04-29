@@ -1,0 +1,38 @@
+[project]
+name = "rag2"
+version = "0.1.0"
+description = "POC logistics document QA assistant with grounded retrieval and guardrails"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb",
+    "fastapi",
+    "jinja2",
+    "langchain",
+    "langchain-chroma",
+    "langchain-core",
+    "langchain-openai",
+    "paddleocr",
+    "pdfplumber",
+    "pdf2image",
+    "pydantic-settings",
+    "pymupdf",
+    "python-multipart",
+    "unstructured",
+    "unstructured-inference",
+    "unstructured-pytesseract",
+    "uvicorn",
+]
+
+[project.scripts]
+rag2 = "rag2.main:main"
+
+[build-system]
+requires = ["uv_build>=0.11.6,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.0.3",
+]
