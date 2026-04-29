@@ -1,6 +1,6 @@
 # Logistics Document QA POC
 
-FastAPI-based proof of concept for a Transportation Management System assistant that:
+RAG-based proof of concept for Logistics Document QnA that:
 
 - accepts logistics PDFs
 - extracts sections and tables separately
