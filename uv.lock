@@ -2,32 +2,32 @@ version = 1
 revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
+    "python_full_version >= '3.14' and platform_machine != 's390x' and sys_platform == 'darwin'",
+    "python_full_version >= '3.14' and platform_machine == 's390x' and sys_platform == 'darwin'",
+    "python_full_version >= '3.14' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "python_full_version >= '3.14' and platform_machine != 's390x' and sys_platform == 'win32'",
     "python_full_version >= '3.14' and platform_machine != 's390x' and sys_platform == 'emscripten'",
-    "python_full_version >= '3.14' and platform_machine != 's390x' and sys_platform == 'darwin'",
-    "python_full_version >= '3.14' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "(python_full_version >= '3.14' and platform_machine != 'aarch64' and platform_machine != 's390x' and sys_platform == 'linux') or (python_full_version >= '3.14' and platform_machine != 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32')",
     "python_full_version >= '3.14' and platform_machine == 's390x' and sys_platform == 'win32'",
     "python_full_version >= '3.14' and platform_machine == 's390x' and sys_platform == 'emscripten'",
-    "python_full_version >= '3.14' and platform_machine == 's390x' and sys_platform == 'darwin'",
     "python_full_version >= '3.14' and platform_machine == 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version == '3.13.*' and platform_machine != 's390x' and sys_platform == 'darwin'",
+    "python_full_version == '3.13.*' and platform_machine == 's390x' and sys_platform == 'darwin'",
+    "python_full_version == '3.13.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "python_full_version == '3.13.*' and platform_machine != 's390x' and sys_platform == 'win32'",
     "python_full_version == '3.13.*' and platform_machine != 's390x' and sys_platform == 'emscripten'",
-    "python_full_version == '3.13.*' and platform_machine != 's390x' and sys_platform == 'darwin'",
-    "python_full_version == '3.13.*' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "(python_full_version == '3.13.*' and platform_machine != 'aarch64' and platform_machine != 's390x' and sys_platform == 'linux') or (python_full_version == '3.13.*' and platform_machine != 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32')",
     "python_full_version == '3.13.*' and platform_machine == 's390x' and sys_platform == 'win32'",
     "python_full_version == '3.13.*' and platform_machine == 's390x' and sys_platform == 'emscripten'",
-    "python_full_version == '3.13.*' and platform_machine == 's390x' and sys_platform == 'darwin'",
     "python_full_version == '3.13.*' and platform_machine == 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'win32'",
+    "python_full_version < '3.13' and platform_machine != 's390x' and sys_platform == 'darwin'",
+    "python_full_version < '3.13' and platform_machine == 's390x' and sys_platform == 'darwin'",
+    "python_full_version < '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "python_full_version < '3.13' and platform_machine != 's390x' and sys_platform == 'win32'",
     "python_full_version < '3.13' and platform_machine != 's390x' and sys_platform == 'emscripten'",
-    "python_full_version < '3.13' and platform_machine != 's390x' and sys_platform == 'darwin'",
-    "python_full_version < '3.13' and platform_machine == 'aarch64' and sys_platform == 'linux'",
     "(python_full_version < '3.13' and platform_machine != 'aarch64' and platform_machine != 's390x' and sys_platform == 'linux') or (python_full_version < '3.13' and platform_machine != 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'linux' and sys_platform != 'win32')",
     "python_full_version < '3.13' and platform_machine == 's390x' and sys_platform == 'win32'",
     "python_full_version < '3.13' and platform_machine == 's390x' and sys_platform == 'emscripten'",
-    "python_full_version < '3.13' and platform_machine == 's390x' and sys_platform == 'darwin'",
     "python_full_version < '3.13' and platform_machine == 's390x' and sys_platform != 'darwin' and sys_platform != 'emscripten' and sys_platform != 'win32'",
 ]
 
@@ -1118,7 +1118,7 @@ wheels = [
 
 [[package]]
 name = "huggingface-hub"
-version = "1.12.0"
+version = "1.12.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "filelock" },
@@ -1131,9 +1131,9 @@ dependencies = [
     { name = "typer" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/56/52/1b54cb569509c725a32c1315261ac9fd0e6b91bbbf74d86fca10d3376164/huggingface_hub-1.12.0.tar.gz", hash = "sha256:7c3fe85e24b652334e5d456d7a812cd9a071e75630fac4365d9165ab5e4a34b6", size = 763091, upload-time = "2026-04-24T13:32:08.674Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3e/9f/3fda8b014db3ae239addc9b48b35c2cf7d318950b430712f34a2473ef81d/huggingface_hub-1.12.2.tar.gz", hash = "sha256:282c4999e641c89affdc4c02c265eddea944c1390dc19e89dac8ad3ae76dbdaf", size = 763393, upload-time = "2026-04-29T09:45:09.202Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/2b/ef03ddb96bd1123503c2bd6932001020292deea649e9bf4caa2cb65a85bf/huggingface_hub-1.12.0-py3-none-any.whl", hash = "sha256:d74939969585ee35748bd66de09baf84099d461bda7287cd9043bfb99b0e424d", size = 646806, upload-time = "2026-04-24T13:32:06.717Z" },
+    { url = "https://files.pythonhosted.org/packages/71/c1/1fa4162f6dd53259daf2ad31385273341821fa0acce164cd03971937a60e/huggingface_hub-1.12.2-py3-none-any.whl", hash = "sha256:7968e897fdbc6343c871c240d87d4434efe0ad9f80d57daa1cc5678c6d148529", size = 647757, upload-time = "2026-04-29T09:45:07.63Z" },
 ]
 
 [[package]]
@@ -1495,14 +1495,14 @@ wheels = [
 
 [[package]]
 name = "langchain-protocol"
-version = "0.0.12"
+version = "0.0.13"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5c/51/1157009b6f94e6e58be58fa8b620187d657909a8b36a6bf5b0c52a2711f6/langchain_protocol-0.0.12.tar.gz", hash = "sha256:5e14c434290a705c9510fdb1a83ecf7561a5e6e0dfd053930ade80dba069269f", size = 6408, upload-time = "2026-04-25T01:05:01.489Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ba/7d/ac74b64f9d3150cc90c172490e7321b26ccc76ecef87c3629c83eda6948f/langchain_protocol-0.0.13.tar.gz", hash = "sha256:7448ca507407a6aaa28a73884d74765540e65da891a14a6e062a196412bc554c", size = 5713, upload-time = "2026-04-28T21:08:11.584Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/95/82/3431e3061c917439589fa88a6b23c9bc0e154cba0f05d2e895a68c76ff74/langchain_protocol-0.0.12-py3-none-any.whl", hash = "sha256:402b61f42d4139692528cf37226c367bb6efc8ff8165b29380accb0abfece7b2", size = 6639, upload-time = "2026-04-25T01:05:00.487Z" },
+    { url = "https://files.pythonhosted.org/packages/d2/04/89db2cf7d839aef9c6544b9e3495f522ec3e408cbab34c9c05e41a3d87b0/langchain_protocol-0.0.13-py3-none-any.whl", hash = "sha256:47d4f2a05827bf3a66b238082bf59e8313fd3a14e1b268bdd65c85b67a6b1f6c", size = 6832, upload-time = "2026-04-28T21:08:10.564Z" },
 ]
 
 [[package]]
@@ -1572,7 +1572,7 @@ wheels = [
 
 [[package]]
 name = "langsmith"
-version = "0.7.37"
+version = "0.7.38"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -1585,9 +1585,9 @@ dependencies = [
     { name = "xxhash" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e4/38/092f99a3326f0f6bb6ea62f388b16611d9cb619869ed7b0f3dae6c21c331/langsmith-0.7.37.tar.gz", hash = "sha256:e15ab27f5febbcfbaec4e6fa74ab71f0284f4c5965249cc732fe9344844290cb", size = 4433170, upload-time = "2026-04-26T21:36:41.314Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/af/c9/b3e54cfcb480876dfe33ecfdd64feeb621a86d9e6f4a6b9eb46851807018/langsmith-0.7.38.tar.gz", hash = "sha256:0db529b768d66c45f22fe959a0af7151342704fefafdecf3c60b14097c14fdb1", size = 4431914, upload-time = "2026-04-29T00:21:42.865Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c6/76/fa99559d23ec9a39e1153f317a5ec99e7b967aec08b5faac04f8da603dd3/langsmith-0.7.37-py3-none-any.whl", hash = "sha256:64fc5fbf223fcdcc6ee44b08a5df4b2ab8a55e4d968e850c86b6b69fe0c258e3", size = 385948, upload-time = "2026-04-26T21:36:39.09Z" },
+    { url = "https://files.pythonhosted.org/packages/86/bc/a19d0a6d5575c637796675831dbef3555568e84d913f14ec579f92162ffa/langsmith-0.7.38-py3-none-any.whl", hash = "sha256:9c400ad508c0e4edc37bd55987047c6b8aac36ddd55f6096e3806f4d6a100618", size = 392310, upload-time = "2026-04-29T00:21:40.534Z" },
 ]
 
 [[package]]
@@ -4516,7 +4516,7 @@ wheels = [
 
 [[package]]
 name = "unstructured"
-version = "0.22.23"
+version = "0.22.26"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "beautifulsoup4" },
@@ -4543,9 +4543,9 @@ dependencies = [
     { name = "unstructured-client" },
     { name = "wrapt" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9d/12/5960eb3d5fa2532ed5495c1c72442c022c2568c60f9c2f9fa020bac4007a/unstructured-0.22.23.tar.gz", hash = "sha256:75051c5a1dcfeca3c77149fc5e0ae5f1f0ee0fc31ec7f93bb259ce70dc4d5fb8", size = 1519424, upload-time = "2026-04-24T18:43:22.178Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/30/64/661e3db645f518e85c7951100fc4ac1604fe9ecd59e030cb05a2f30e5392/unstructured-0.22.26.tar.gz", hash = "sha256:86d921349e19116dc3e2a58a5b1bb7d725b743d0380985e15e2ae4799c4a3399", size = 1523610, upload-time = "2026-04-29T14:00:31.636Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/34/83/b72d25dd50056150a9ea8b08f0607ca3becab1c5ae368078d32a69ed82ab/unstructured-0.22.23-py3-none-any.whl", hash = "sha256:34b85c328dc8c8a10802af234429c0eab7533021fa0d07d4f3fe70387e6c65cc", size = 1575277, upload-time = "2026-04-24T18:43:19.669Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/1b/78ff739f894c293ff2765b02bc87876f07ae2d28686d6495be3e13218c6a/unstructured-0.22.26-py3-none-any.whl", hash = "sha256:7fd813814ee19a8d2f5bc7939cc2549ffd52730d019753e7690bc72088b0aa97", size = 1580973, upload-time = "2026-04-29T14:00:29.354Z" },
 ]
 
 [[package]]
@@ -4568,7 +4568,7 @@ wheels = [
 
 [[package]]
 name = "unstructured-inference"
-version = "1.6.10"
+version = "1.6.11"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "accelerate" },
@@ -4586,9 +4586,9 @@ dependencies = [
     { name = "torch" },
     { name = "transformers" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/9a/aa/5d0a01facf2f4d00ce1b3e8a2f23e179b584b0a2d89acd647143583eb5da/unstructured_inference-1.6.10.tar.gz", hash = "sha256:b3a2809561b7a2f8840217082dea1234708fb50c86e654f83c6731d68b6051ed", size = 47868, upload-time = "2026-04-26T20:09:57.927Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/36/9b/265c0db1f5ed89990920b1af1112223e08791d7e06949dfaf14906efb998/unstructured_inference-1.6.11.tar.gz", hash = "sha256:ff4a089b7d2c3dbb21be3fd94d5b7b72e5a60281def57410e8907de33667a4be", size = 48019, upload-time = "2026-04-29T14:03:46.777Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a1/3b/75d00d8a771cc34c50f8d97ec831de0d966287f675910c0134ef5e0b7e9c/unstructured_inference-1.6.10-py3-none-any.whl", hash = "sha256:28dc73fe9ce952d03b256520525f7e2c1656920be8eb6204193e890cbaf2c73a", size = 55132, upload-time = "2026-04-26T20:09:56.455Z" },
+    { url = "https://files.pythonhosted.org/packages/5d/ea/a3d4e93143f1ce389185e442a368b9ff531e28468eef22732004d9c190c4/unstructured_inference-1.6.11-py3-none-any.whl", hash = "sha256:ae9e900f96ec38519d10f0a55a9e45cabc4c2384c87252c79dcd4de7e217afd7", size = 55275, upload-time = "2026-04-29T14:03:45.307Z" },
 ]
 
 [[package]]
