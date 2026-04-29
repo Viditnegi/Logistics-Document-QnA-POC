@@ -11,6 +11,9 @@ FastAPI-based proof of concept for a Transportation Management System assistant 
 - falls back to quoted retrieved evidence if OpenAI generation is unavailable
 - extracts structured shipment data automatically after upload
 
+<img width="1365" height="975" alt="image" src="https://github.com/user-attachments/assets/8dab1bc4-27ce-4b05-9cdb-e7d36c7e557e" />
+<img width="1371" height="971" alt="image" src="https://github.com/user-attachments/assets/b8da8ddc-72f2-416b-bcd6-ea87ab4d8749" />
+
 ## Requirements
 
 - Python 3.12+
