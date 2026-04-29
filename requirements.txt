@@ -17,4 +17,3 @@ unstructured-pytesseract>=0.3.0
 uvicorn[standard]>=0.23.0
 httpx>=0.28.1
 pytest>=9.0.3
-pi-heif>=0.0.0
