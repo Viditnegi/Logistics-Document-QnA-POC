@@ -31,8 +31,11 @@ class Chunk:
 
 
 def extract_elements(file_path: Path) -> list[Any]:
-    from unstructured.partition.pdf import partition_pdf
-    return partition_pdf(filename=str(file_path), infer_table_structure=True, strategy="hi_res")
+    try:
+        from unstructured.partition.pdf import partition_pdf
+        return partition_pdf(filename=str(file_path), infer_table_structure=True, strategy="hi_res")
+    except ImportError:
+        return []
 
 
 def build_chunks(
