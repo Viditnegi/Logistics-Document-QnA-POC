@@ -185,17 +185,6 @@ After document upload, the system automatically extracts structured shipment dat
 
 The extraction uses the same chat model configured in settings and prompts the LLM to return JSON with these fields.
 
-## Failure Cases
-
-| Scenario | Current Handling |
-|----------|--------------|
-| No text extracted from PDF | `RuntimeError`: "No readable sections found" |
-| OpenAI API key missing | `RuntimeError` on first use |
-| Chat model fails | Falls back to extractive answer from retrieved context |
-| Empty question | Blocked by preflight guardrail |
-| No chunks retrieved | Returns `insufficient_evidence` status |
-| Extraction fails | Returns `null` for shipment_data |
-
 ## API
 
 ### Upload a PDF
